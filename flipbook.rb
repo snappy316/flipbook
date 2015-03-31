@@ -2,7 +2,7 @@ class Flipbook
   def flip_book(string)
     reverse = []
     string.scan(/\w+/) { |w| reverse.unshift(w) }
-    reverse.inspect
+    reverse.join(' ')
   end
 end
 
